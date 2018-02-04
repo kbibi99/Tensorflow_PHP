@@ -14,7 +14,7 @@
         $response['success'] = 1;
         $response['message'] = "Image Uploaded Successfully";
 	//$command = shell_exec();
-	$output = shell_exec('/usr/bin/python /opt/lampp/htdocs/test.py');
+	$output = shell_exec('python C:\Users\chede\Desktop\models\tutorials\image\imagenet\classify_image.py --image_file=C:\xampp\htdocs\uploads\\'.$name.'.JPG');
 	// $output = exec('python ');
 	$response['data'] = $output;
     }else{
